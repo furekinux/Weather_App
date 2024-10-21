@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Weather App Redesign</title>
+    <link rel="shortcut icon" href="./storage/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+
+    <header>
+        <section class="background-info">
+            <div class="top-cont">
+                <h2 id="location_place">Ciudad, Pais</h2>
+                <img src="./storage/img/search_white.png" class="search"/>
+            </div>
+            <div class="mid-cont">
+                <div class="temp-cont">
+                    <p id="feels">Feels like -2°</p>
+                    <h1 id="temperature_main">3°</h1>
+                </div>
+                
+                <div class="temp-desc">
+                    <img id="weather_icon" src="//cdn.weatherapi.com/weather/64x64/day/176.png" class="weather main-icon"/>
+                    <p id="weather_text">Cloudy</p>
+                </div>
+            </div>
+            <div class="bottom-cont">
+                <p id="date">January 18, 16:14</p>
+                <div>
+                    <p>Day 3°</p>
+                    <p>Night -1°</p>
+                </div>
+            </div>
+        </section>
+        <section class="button-container">
+            <button disabled>Today</button>
+            <button>Tomorrow</button>
+            <button>10 days</button>
+        </section>
+    </header>
+
+    <section class="card-cont">
+        <div class="card-info">
+            <img class="left-icon" src="./storage/img/air.png"/>
+            <div class="info-1">
+                <div>
+                    <h3>Wind speed</h3>
+                    <p>12km/h</p>
+                </div>
+                <span><img src=""/>2 km/h</span>
+            </div>
+        </div>
+        <div class="card-info">
+            <img class="left-icon" src="./storage/img/rainy.png"/>
+            <div class="info-1">
+                <div>
+                    <h3>Rain chance</h3>
+                    <p>24%</p>
+                </div>
+                <span><img src=""/>10%</span>
+            </div>
+        </div>
+        <div class="card-info">
+            <img class="left-icon" src="./storage/img/waves.png"/>
+            <div class="info-1">
+                <div>
+                    <h3>Pressure</h3>
+                    <p>720 hpa</p>
+                </div>
+                <span><img src=""/>32 hpa</span>
+            </div>
+        </div>
+        <div class="card-info">
+            <img class="left-icon" src="./storage/img/light_mode.png"/>
+            <div class="info-1">
+                <div>
+                    <h3>UV Index</h3>
+                    <p>2,3</p>
+                </div>
+                <span><img src="..."/>0.3</span>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="./js/main.js"></script>
+</html>

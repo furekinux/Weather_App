@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Weather App Redesign</title>
-    <link rel="shortcut icon" href="./storage/img/logo.png" type="image/png">
+    <link rel="shortcut icon" id="iconWeather" href="https://static.vecteezy.com/system/resources/thumbnails/028/653/734/small_2x/green-frog-icon-png.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/main.js"></script>
 </head>
 <body>
 
@@ -36,9 +35,9 @@
             </div>
         </section>
         <section class="button-container">
-            <button disabled>Today</button>
-            <button>Tomorrow</button>
-            <button>10 days</button>
+            <button disabled onclick="todayWeather()">Today</button>
+            <button onclick="tomorrowWeather()">Tomorrow</button>
+            <button onclick="tenForecast()">10 days</button>
         </section>
     </header>
 
@@ -48,9 +47,9 @@
             <div class="info-1">
                 <div>
                     <h3>Wind speed</h3>
-                    <p>12km/h</p>
+                    <p id="wind">12km/h</p>
                 </div>
-                <span><img src=""/>2 km/h</span>
+                <span id="windChange">2 km/h</span>
             </div>
         </div>
         <div class="card-info">
@@ -58,9 +57,9 @@
             <div class="info-1">
                 <div>
                     <h3>Rain chance</h3>
-                    <p>24%</p>
+                    <p id="rain">24%</p>
                 </div>
-                <span><img src=""/>10%</span>
+                <span id="rainChange">10%</span>
             </div>
         </div>
         <div class="card-info">
@@ -68,9 +67,9 @@
             <div class="info-1">
                 <div>
                     <h3>Pressure</h3>
-                    <p>720 hpa</p>
+                    <p id="pressure">720 hpa</p>
                 </div>
-                <span><img src=""/>32 hpa</span>
+                <span id="pressureChange">32 hpa</span>
             </div>
         </div>
         <div class="card-info">
@@ -78,13 +77,53 @@
             <div class="info-1">
                 <div>
                     <h3>UV Index</h3>
-                    <p>2,3</p>
+                    <p id="uv">2,3</p>
                 </div>
-                <span><img src="..."/>0.3</span>
+                <span id="uvChange">0.3</span>
             </div>
         </div>
     </section>
-
+    <section class="card-cont-2">
+        <div class="card-info-2">
+            <h3><img src="./storage/img/calendar_month.png"/>Hourly forecast</h3>
+            <div class="icons-cont">
+                <div class="contain-hour">
+                    <p>Now</p>
+                    <img src=""/>
+                    <p>10°</p>
+                </div>
+                <div class="contain-hour">
+                    <p>Now</p>
+                    <img src=""/>
+                    <p>10°</p>
+                </div>
+                <div class="contain-hour">
+                    <p>Now</p>
+                    <img src=""/>
+                    <p>10°</p>
+                </div>
+                <div class="contain-hour">
+                    <p>Now</p>
+                    <img src=""/>
+                    <p>10°</p>
+                </div>
+                <div class="contain-hour">
+                    <p>Now</p>
+                    <img src=""/>
+                    <p>10°</p>
+                </div>
+                <div class="contain-hour">
+                    <p>Now</p>
+                    <img src=""/>
+                    <p>10°</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3><img src="./storage/img/calendar_month.png"/>Day forecast</h3>
+            
+        </div>
+    </section>
 </body>
 <script src="./js/main.js"></script>
 </html>
